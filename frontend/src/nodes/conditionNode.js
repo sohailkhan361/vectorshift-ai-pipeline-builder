@@ -1,15 +1,15 @@
-// New Node: FilterNode.js
+// New Node: ConditionNode.js
 import { BaseNode } from "./baseNode";
 
-export const FilterNode = ({ id }) => {
+export const ConditionNode = ({ id }) => {
 
   return (
     <BaseNode
-      title="Filter"
+      title="Condition"
       inputs={[`${id}-input`]}
       outputs={[`${id}-output`]}
     >
-      <div>Filter Data</div>
+      <div>Condition on Data</div>
     </BaseNode>
   );
 };

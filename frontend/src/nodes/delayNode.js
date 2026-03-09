@@ -1,15 +1,15 @@
-// New Node: FilterNode.js
+// New Node: DelayNode.js
 import { BaseNode } from "./baseNode";
 
-export const FilterNode = ({ id }) => {
+export const DelayNode = ({ id }) => {
 
   return (
     <BaseNode
-      title="Filter"
+      title="Delay"
       inputs={[`${id}-input`]}
       outputs={[`${id}-output`]}
     >
-      <div>Filter Data</div>
+      <div>Delay Response</div>
     </BaseNode>
   );
 };

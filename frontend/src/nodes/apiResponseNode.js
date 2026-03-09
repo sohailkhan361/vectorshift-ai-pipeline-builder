@@ -1,15 +1,15 @@
-// New Node: FilterNode.js
+// New Node: ApiResponseNode.js
 import { BaseNode } from "./baseNode";
 
-export const FilterNode = ({ id }) => {
+export const ApiResponseNode = ({ id }) => {
 
   return (
     <BaseNode
-      title="Filter"
+      title="API Response"
       inputs={[`${id}-input`]}
       outputs={[`${id}-output`]}
     >
-      <div>Filter Data</div>
+      <div>API Response Data</div>
     </BaseNode>
   );
 };

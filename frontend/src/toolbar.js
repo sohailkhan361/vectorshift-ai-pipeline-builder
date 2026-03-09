@@ -12,6 +12,10 @@ export const PipelineToolbar = () => {
                 <DraggableNode type='customOutput' label='Output' />
                 <DraggableNode type='text' label='Text' />
                 <DraggableNode type='filter' label='Filter' />
+                <DraggableNode type='condition' label='Condition' />
+                <DraggableNode type='delay' label='Delay' />
+                <DraggableNode type='apiResponse' label='API Response' />
+                <DraggableNode type='calculate' label='Calculate' />
             </div>
         </div>
     );
