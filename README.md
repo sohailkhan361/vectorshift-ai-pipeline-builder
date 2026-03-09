@@ -323,3 +323,44 @@ Is DAG: true
 # Author
 **Sohail Khan**
 Software Engineer | Full Stack | React | Python
+
+# Screenshots
+
+### Pipeline Builder Interface
+![Frontend UI](screenshots/frontend-ui.png)
+
+---
+
+### Node Graph Example
+![Node Graph](screenshots/node-graph-1.png)
+
+---
+
+### Additional Pipeline Example
+![Nodes Graph](screenshots/nodes-graph-2.png)
+
+---
+
+### Dynamic Text Node with Variables
+Users can define variables using `{{variable}}` syntax.
+
+![Text Node Variables](screenshots/text-input-with-variables-and-handles.png)
+
+---
+
+### DAG Validation - Valid Pipeline
+Backend successfully detects a valid Directed Acyclic Graph.
+
+![DAG True](screenshots/is_dag_true.png)
+
+---
+
+### DAG Validation - Cycle Detected
+Backend correctly identifies cyclic pipelines.
+
+![DAG False](screenshots/is_dag_false.png)
+
+---
+
+### FastAPI Backend Running
+![Backend Server](screenshots/backend.png)
