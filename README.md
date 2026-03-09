@@ -81,7 +81,22 @@ http://localhost:3000
 
 ---
 
+# Structure:
+> tree
+
 # Running the Application
 
 1. Start the FastAPI backend
+> cd backend
+> uvicorn main:app --reload
+
+Open in browser: http://localhost:8000
+
 2. Start the React frontend
+> cd frontend
+> npm i
+> npm start
+
+Open in browser: http://localhost:3000
+
+
