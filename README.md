@@ -3,7 +3,7 @@
 
 A visual pipeline builder built using **React (Frontend)** and **FastAPI (Backend)** that allows users to create and connect nodes representing components of an AI workflow.
 
-This project was developed as part of the **VectorShift Frontend Technical Assessment** and demonstrates modular UI architecture, dynamic node behavior, and frontend–backend integration.
+This project was developed as part of the **VectorShift AI Pipeline Builder Demonstration** and demonstrates modular UI architecture, dynamic node behavior, and frontend–backend integration.
 
 ---
 
