@@ -2,6 +2,13 @@
 import { useState } from "react";
 import { BaseNode } from "./baseNode";
 
+const inputStyle = {
+  border: "1px solid #ddd",
+  borderRadius: "4px",
+  padding: "4px 6px",
+  fontSize: "12px"
+};
+
 export const InputNode = ({ id, data }) => {
 
   const [currName, setCurrName] =
@@ -17,15 +24,18 @@ export const InputNode = ({ id, data }) => {
     >
 
       <label>
-        Name:
-        <input
-          value={currName}
-          onChange={(e) => setCurrName(e.target.value)}
-        />
+        Name: {" "}
+        <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+          <input
+            style={inputStyle}
+            value={currName}
+            onChange={(e) => setCurrName(e.target.value)}
+          />
+        </div>
       </label>
 
       <label>
-        Type:
+        Type: {" "}
         <select
           value={inputType}
           onChange={(e) => setInputType(e.target.value)}

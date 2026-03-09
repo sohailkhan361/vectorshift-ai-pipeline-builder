@@ -1,21 +1,17 @@
 import { Handle, Position } from "reactflow";
 
 const nodeStyle = {
-  width: 200,
-  minHeight: 80,
-  border: "1px solid #ccc",
-  borderRadius: 6,
-  padding: 10,
-  background: "white",
-  boxShadow: "0 2px 6px rgba(0,0,0,0.1)"
+  width: 220,
+  minHeight: 100,
+  border: "1px solid #e5e7eb",
+  borderRadius: "8px",
+  padding: "14px",
+  background: "#ffffff",
+  boxShadow: "0 4px 10px rgba(0,0,0,0.05)",
+  fontSize: "14px",
 };
 
-export const BaseNode = ({
-  title,
-  inputs = [],
-  outputs = [],
-  children
-}) => {
+export const BaseNode = ({ title, inputs = [], outputs = [], children }) => {
   return (
     <div style={nodeStyle}>
       {/* input handles */}
@@ -29,11 +25,23 @@ export const BaseNode = ({
         />
       ))}
 
-      <div>
-        <strong>{title}</strong>
+      <div
+        style={{
+          fontWeight: "600",
+          marginBottom: "10px",
+          fontSize: "14px",
+        }}
+      >
+        {title}
       </div>
 
-      <div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "10px",
+        }}
+      >
         {children}
       </div>
 
@@ -47,7 +55,6 @@ export const BaseNode = ({
           style={{ top: 20 + index * 20 }}
         />
       ))}
-
     </div>
   );
 };
