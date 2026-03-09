@@ -1,5 +1,15 @@
 import { Handle, Position } from "reactflow";
 
+const nodeStyle = {
+  width: 200,
+  minHeight: 80,
+  border: "1px solid #ccc",
+  borderRadius: 6,
+  padding: 10,
+  background: "white",
+  boxShadow: "0 2px 6px rgba(0,0,0,0.1)"
+};
+
 export const BaseNode = ({
   title,
   inputs = [],
@@ -7,14 +17,7 @@ export const BaseNode = ({
   children
 }) => {
   return (
-    <div style={{
-      width: 200,
-      minHeight: 80,
-      border: "1px solid black",
-      padding: 10,
-      background: "white"
-    }}>
-
+    <div style={nodeStyle}>
       {/* input handles */}
       {inputs.map((input, index) => (
         <Handle
