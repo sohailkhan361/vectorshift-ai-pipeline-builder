@@ -1,4 +1,5 @@
 # VectorShift AI Pipeline Builder
+![Pipeline Builder](screenshots/frontend-ui.png)
 
 A visual pipeline builder built using **React (Frontend)** and **FastAPI (Backend)** that allows users to create and connect nodes representing components of an AI workflow.
 
